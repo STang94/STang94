@@ -6,7 +6,7 @@ function pause(ms)
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function startTime() 
+async function startTime() //fonction qui indique la date repris du TP3 corrigé
 {
   while(true) 
   {

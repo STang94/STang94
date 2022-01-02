@@ -1,6 +1,6 @@
 function changeimg(){
-    const monde=document.Monde.niveau.value;
-    switch(monde){
+    const monde=document.Monde.niveau.value; //Une constante qui prendra en compte le niveau choisis par l'utilisateur
+    switch(monde){ //Un switch case pour faire le choix
         case 'Niveau 1':
             document.getElementById('sect').style.backgroundImage= "url(images/Niv1.jpg)";//https://wallhere.com/en/wallpaper/211052
             break;

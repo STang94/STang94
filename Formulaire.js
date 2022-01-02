@@ -24,10 +24,11 @@ function AjouterPerso(){
     cell5 = document.createElement("td");
     cell6 = document.createElement("td");
     
+    //Dépend de si la case nom a été écrit ou non
     if(nom!=""){cell0=document.createTextNode(nom+"("+"Perso "+numéro+") "+"|"+classe+"|") }
     else{cell0=document.createTextNode("Perso "+numéro+"|"+classe+"|")}
     
-    switch(classe)  
+    switch(classe)  //Puisque que les stats dépendent des classes il est mieux de faire un switch case
     {case 'Guerrier':
         Value1=document.createTextNode(getRandomInt(500,600));
         Value2=document.createTextNode(getRandomInt(10,20));
@@ -93,7 +94,7 @@ function AjouterPerso(){
     row.appendChild(cell5);
     row.appendChild(cell6);
     tabBody.appendChild(row);
-    numéro++;
+    numéro++; //Ceci est pour perso1,perso2,etc.
     if (!document.Creation.nom.checkValidity()  ) {
         return
  }
