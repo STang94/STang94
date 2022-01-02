@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr" >
+  <head><!--Page du formulaire avec le tableau -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style_Formulaire.css">
+    <title>Création de personnage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+  <header>
+    <div id="titre_principal">
+        <img src="images/imagegauche.jfif" alt="Logo" width="100">
+        <h1> RPG camp </h1>
+    </div>
+</header>
+<audio src="musique/song2.mp3" controls> <!--ArcheAge Main Theme --> 
+</audio>
+  
+      
+    <h1>Création de personnage</h1>
+        <form name="Creation" action="/ma-page-de-traitement" class="box" method="post">
+            <h2>Sexe</h2>
+             <label for="genres_1">
+                <input type="radio" id="genres_1" name="character_genres_1" value="homme" >
+                Homme
+            </label>
+            <label for="genres_2">
+                <input type="radio" id="genres_2" name="character_genres_2" value="femme" >
+                Femme
+            </label>
+            <h2>
+                <label>Nom du personnage</label><br>
+                <input type="text" name="nom" placeholder="Saisir le nom du personnage" required>
+            </h2>
+            <h2>
+                <label for="class">Classe</label><br> <!-- Les différents classes -->
+                <SELECT id="class" name="user_class" size="1">
+                    <OPTION value="Guerrier">Guerrier</OPTION>
+                    <OPTION value="Mage">Mage</OPTION>
+                    <OPTION value="Prêtre">Prêtre</OPTION>
+                    <OPTION value="Voleur">Voleur</OPTION>
+                    <OPTION value="Paladin">Paladin</OPTION>
+                    </SELECT>
+            </h2>
+            <h2><label for="couleur_des_yeux">Couleurs des yeux :</label>
+                <SELECT id="couleur_des_yeux" name="character_couleur_des_yeux" size="1">
+                <OPTION>Bleu
+                <OPTION>Rouge
+                <OPTION>Vert
+                <OPTION>Noir
+                <OPTION>Jaune
+                </SELECT>
+            </h2>
+            <h2><label for="couleur_de_la_peau">Couleur de la peau :</label>
+                <SELECT id="couleur_de_la_peau" name="character_couleur_de_la_peau" size="1">
+                <OPTION>Cuivrée
+                <OPTION>Emeraude
+                <OPTION>Pâle
+                <OPTION>Noir
+                <OPTION>Clair
+                <OPTION>Terne
+                <OPTION>Doré
+                </SELECT>
+            </h2>
+
+
+         <h2><label for="cicatrice">Cicatrice </label>
+            <input type="checkbox" id="cicatrice" name="Character_Cicatrice" value="">
+         </h2>
+         <h2><label for="tache_de_rousseur">Tache de rousseur </label>
+            <input type="checkbox" id="tache_de_rousseur" name="Character_Tache de rousseur" value="">
+         </h2>
+         <input type="button" onclick="location.href='Niveau.html';" value="Choix du niveau" />
+         
+         </form>
+
+         
+          <table class="datatable" id='tabletest'>
+            <thead>  <!--Le tableau des stats -->
+                <tr>    
+                    <th id="premier">&nbsp;</th>
+                    <th>HP</th>
+                    <th>Mana</th>
+                    <th>Vitalité</th>
+                    <th>Force</th>
+                    <th>Intelligence</th>
+                    <th>Dextérité</th>
+                </tr>
+                <tr>
+                    <th id="second">&nbsp;</th>
+                    <th><img src="images/Coeur.png" alt="HP" width="40"></th>
+                    <th><img src="images/Mana.jpg" alt="MP" width="40"></th>
+                    <th><img src="images/Vitalité.jpg" alt="vitalité" width="40"></th>
+                    <th><img src="images/Force.jpg" alt="Force" width="40"></th>
+                    <th><img src="images/Intelligence.jpg" alt="Intelligence" width="40"></th>
+                    <th><img src="images/Dextérité.png" alt="Dextérité" width="40"></th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+            </table>
+            <button type="submit" class="btn" onclick="AjouterPerso()">Ajouter Personnage</button>
+            <button type="button" class="btn"  onclick="SupprimerPerso()">Supprimer Dernier Personnage</button>
+            <button type="reset"  class="btn" onclick="SupprimerTout()">Supprimer tout</button>
+                <footer>
+                    <a href="À_propos.html">Contact/À propos de nous</a> <br>
+                    <a href="Accueil.html">Accueil</a> <br>
+                </footer>
+        <script src="Formulaire.js"></script>
+        <script>signal()
+        </script>  
+         
+         
+  </body>
+  </html>

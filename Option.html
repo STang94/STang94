@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr" >
+    <head><!--Page des options mais pour l'instant inutile -->
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style_Option.css">
+        <title>Nom de l'url de la page d'accueil</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+    <header>
+        <div id="titre_principal">
+            <img src="images/imagegauche.jfif" alt="Logo" width="100">
+            <h1> RPG camp </h1>
+        </div>
+    </header>
+    
+        <h1>Configuration du mode de jeu</h1>
+        <form name="Config" action="/ma-page-de-traitement" class="box" method="post">
+            <h2>
+                <label for="difficulté">Difficulté</label><br>
+                <SELECT id="difficulté" name="user_difficulté" size="1">
+                    <OPTION value="1">Facile</OPTION>
+                    <OPTION value="2">Moyen</OPTION>
+                    <OPTION value="3">Difficile</OPTION>
+                    <OPTION value="4">Lucky as always</OPTION>
+                    </SELECT>
+            </h2>
+            <h2>
+                <label>événement aléatoire</label><br>
+                <SELECT id="événement" name="user_event" size="1">
+                    <OPTION value="1">Non</OPTION>
+                    <OPTION value="2">Peu fréquent</OPTION>
+                    <OPTION value="3">Fréquent</OPTION>
+                    <OPTION value="4">Très fréquent</OPTION>
+                    </SELECT>
+            </h2>
+            <footer>
+                <a href="À_propos.html">Contact/À propos de nous</a> <br>
+                <a href="Accueil.html">Accueil</a> <br>
+            </footer>
+            </form>
+    </body>
+    
+</html>

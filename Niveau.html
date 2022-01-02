@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr" >
+    <head> <!--Page des oniveau et Ajax -->
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style_Niveau.css"/>
+        <title>Nom de l'url de la page d'accueil</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+    <header>
+        <div id="titre_principal">
+            <img src="images/imagegauche.jfif" alt="Logo" width="100">
+            <h1> RPG camp </h1>
+        </div>
+    </header>
+    <audio src="musique/song3.mp3" controls> <!--Fertile Plains - ArcheAge Soundtrack --> 
+    </audio>
+    
+        <form name="Monde" action="/ma-page-de-traitement" class="box" method="post">
+         
+    
+         
+            <h2><label for="niveau">Choix du niveau</label><br>
+                <SELECT id="niveau" name="user_niveau" size="1"> <!--Choix du niveau par une liste déroulante -->
+                <OPTION value="Niveau 1">Niveau 1 - forêt de Fonguorde </OPTION>
+                <OPTION value="Niveau 2">Niveau 2 - Cave de Serpi </OPTION>
+                <OPTION value="Niveau 3">Niveau 3 - Mer des divisions </OPTION>
+                <OPTION value="Niveau 4">Niveau 4 - Chateaux phi-nale </OPTION>
+                </SELECT>
+            </h2>
+
+
+         </form>
+         <section id="sect"><h2>
+            <button id="btn1" onclick="changeimg()">Accepter le niveau</button> <!--Acceptation du niveau -->
+        </h2>
+        </section>
+            
+        <footer>
+            <a href="À_propos.html">Contact/À propos de nous</a> <br>
+            <a href="Accueil.html">Accueil</a> <br>
+        </footer>
+        <script src="Niveau.js"></script>         
+                    
+
+
+        
+    </body>
+    
+</html>
